@@ -1,0 +1,9 @@
+webdriver_manager
+beautifulsoup4
+apscheduler
+pyrogram
+TgCrypto
+requests
+selenium
+datetime
+pytz
