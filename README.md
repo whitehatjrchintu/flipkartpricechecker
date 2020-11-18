@@ -1,6 +1,6 @@
 # Flipkart price checker/monitoring telegram bot.
 
-With this telegram bot you can monitor price of any Flipkart product. This TG bot is **heroku** based. Now before you continue i recommend you to read [**Note**](https://github.com/whitehatjrchintu/flipkartpricechecker/blob/main/README.md#note-) section.
+With this telegram bot you can monitor price of any Flipkart product. This TG bot is **heroku** based. Now before you continue i recommend you to read [**Note**](https://github.com/whitehatjrchintu/flipkartpricechecker#note-) section.
 
 ## Prerequisites:-
 
@@ -55,6 +55,6 @@ With this telegram bot you can monitor price of any Flipkart product. This TG bo
 ## Note:-
 - Replace your product url in **bot.py**.
 - Do as per steps.
-- I know they are some extra steps in it. I have to write this for noobs.
-- I know they are extra things in **bot.py**. Will improve it soon.
+- I know there is some extra steps in it. I have to write this for noobs.
+- I know there is extra things in **bot.py**. Will improve it soon.
 - Meant for educational purpose only. I am not responsible if telegram block your account.
