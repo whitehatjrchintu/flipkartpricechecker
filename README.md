@@ -15,7 +15,7 @@ With this telegram bot you can monitor price of any Flipkart product. This TG bo
 5. Go to [my.telegram.org/auth](https://my.telegram.org/auth), login and create app. Check [how to create app on telegram](https://core.telegram.org/api/obtaining_api_id). Now save api_id and api_hash which you got from [my.telegram.org/auth](https://my.telegram.org/auth).
 6. Create a telegram bot by using [Bot Father](https://t.me/botfather). Check [how to create bot in telegram](https://core.telegram.org/bots#3-how-do-i-create-a-bot). [Bot Father](https://t.me/botfather) will give you bot token save that token.
 7. Allow [less secure apps to access](https://devanswers.co/allow-less-secure-apps-access-gmail-account/) to your above created gmail account.
-8. So now you have saved **three** things:-
+8. So now you have saved **four** things:-
 - api_id
 - api_hash
 - bot_token
@@ -26,6 +26,7 @@ With this telegram bot you can monitor price of any Flipkart product. This TG bo
 - Just git clone this repository and start working by editing the code.
 
    `git clone https://github.com/whitehatjrchintu/flipkartpricechecker.git`
+   
    `cd flipkartpricechecker`
 
 - Or download this [repository](https://github.com/whitehatjrchintu/flipkartpricechecker/archive/main.zip) as zip.
@@ -68,7 +69,7 @@ With this telegram bot you can monitor price of any Flipkart product. This TG bo
 - Replace your product url in **bot.py**.
 - Do as per steps.
 - I know there is some extra steps in it. I have to write this for noobs.
-- Will improve it timely. If "pro's" found any mistake or any suggestion let me know i will correct it.
+- Will improve it timely. If "PROs" found any mistake or any suggestion let me know i will correct it.
 - Meant for educational purpose only. I am not responsible if telegram block your account.
 
 # Updates:-
