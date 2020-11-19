@@ -11,25 +11,34 @@ With this telegram bot you can monitor price of any Flipkart product. This TG bo
 1. Create account on [GitHub](https://www.github.com) (if you haven't).
 2. Create account on [Heroku](https://dashboard.heroku.com) (if you haven't).
 3. Create account on [Telegram](https://web.telegram.org) (if you haven't).
-4. Go to [my.telegram.org/auth](https://my.telegram.org/auth), login and create app. Check [how to create app on telegram](https://core.telegram.org/api/obtaining_api_id). Now save api_id and api_hash which you got from [my.telegram.org/auth](https://my.telegram.org/auth).
-5. Create a telegram bot by using [Bot Father](https://t.me/botfather). Check [how to create bot in telegram](https://core.telegram.org/bots#3-how-do-i-create-a-bot). [Bot Father](https://t.me/botfather) will give you bot token save that token.
-6. So now you have saved **three** things:-
+4. Create account on [Gmail](https://mail.google.com) (if you haven't for only this script).
+5. Go to [my.telegram.org/auth](https://my.telegram.org/auth), login and create app. Check [how to create app on telegram](https://core.telegram.org/api/obtaining_api_id). Now save api_id and api_hash which you got from [my.telegram.org/auth](https://my.telegram.org/auth).
+6. Create a telegram bot by using [Bot Father](https://t.me/botfather). Check [how to create bot in telegram](https://core.telegram.org/bots#3-how-do-i-create-a-bot). [Bot Father](https://t.me/botfather) will give you bot token save that token.
+7. Allow (less secure apps to access)[https://devanswers.co/allow-less-secure-apps-access-gmail-account/] to your above created gmail account.
+8. So now you have saved **three** things:-
 - api_id
 - api_hash
 - bot_token
+- gmail credentials
 
 ## How to use?
 ### Step 1:
-- Just git clone this repository and start working by editing the code
-   ```shell
+- Just git clone this repository and start working by editing the code.
+
+   ```
    git clone https://github.com/whitehatjrchintu/flipkartpricechecker.git
-   cd flipkartpricechecker
+   cd flipkartpricechecker```
+
 - Or download this [repository](https://github.com/whitehatjrchintu/flipkartpricechecker/archive/main.zip) as zip.
   
 ### Step 2:
 - After cd or unzip you have to edit **bot.py** file.
 
 - In bot.py **teri_chat_id_daal** this mentioned two times. You have to replace this with your chat id. Search **@chatid_echo_bot** in telegram (This bot is not mine. You can google how to get chat id in telegram.) and click start this will give you your chat id. Now replace **teri_chat_id_daal** with your chat id number.
+
+- Enter gmail credentials in [line 40] (https://github.com/whitehatjrchintu/flipkartpricechecker/blob/028c12afe6990abdd20f64d8c34b0b7e878deebe/bot.py#L40),enter sender email,receiver email in line [line 44](https://github.com/whitehatjrchintu/flipkartpricechecker/blob/028c12afe6990abdd20f64d8c34b0b7e878deebe/bot.py#L44).
+
+- Make other changes like url,subject etc. at your own if you want to change.
 
 ### Step 3:
 - Now create repository (you can create private repository too.) in your github account and upload all 5 files.
@@ -60,5 +69,8 @@ With this telegram bot you can monitor price of any Flipkart product. This TG bo
 - Replace your product url in **bot.py**.
 - Do as per steps.
 - I know there is some extra steps in it. I have to write this for noobs.
-- I know there is extra things in **bot.py**. Will improve it soon.
+- Will improve it timely. If "pro's" found any mistake or any suggestion let me know i will correct it.
 - Meant for educational purpose only. I am not responsible if telegram block your account.
+
+# Updates:-
+- Added smtp for sending emails if price decreases at a particular mentioned level.
