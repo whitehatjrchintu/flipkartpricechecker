@@ -21,17 +21,19 @@ def job():
    gChromeOptions.add_argument("disable-dev-shm-usage")
    gDriver = webdriver.Chrome(chrome_options=gChromeOptions, executable_path=ChromeDriverManager().install())
    gDriver.get('https://www.flipkart.com/redmi-k20-pro-glacier-blue-128-gb/p/itmfgfjthe3dyjp3')
-   price = gDriver.find_element_by_xpath('//*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[4]/div[1]/div/div[1]')
-   x1 = price.text
+   pricee = gDriver.find_element_by_xpath('//*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[4]/div[1]/div/div[1]')
+   x1 = pricee.text
    print(x1)
+   price = x1.lstrip("₹")
+   print(price)
    IST = pytz.timezone('Asia/Kolkata')
    datetime_ist = datetime.now(IST)
    app.send_message(teri_chat_id_daal, "k20 pro's price at " + datetime_ist.strftime('%d:%m:%Y %H:%M:%S') + " is :- " + x1)
    msg.delete()
    gDriver.close()
 
-   my_price = "₹25,000"
-   if x1 <= my_price:
+   my_price = "25,000"
+   if price <= my_price:
       print("price kam ho gya.")
       s = smtplib.SMTP('smtp.gmail.com', 587)
       s.ehlo()
