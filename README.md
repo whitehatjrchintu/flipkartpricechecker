@@ -69,7 +69,7 @@ With this telegram bot you can monitor price of any Flipkart product. This TG bo
 - Replace your product url in **bot.py**.
 - Do as per steps.
 - I know there is some extra steps in it. I have to write this for noobs.
-- Will improve it timely. If "PROs" found any mistake or any suggestion let me know i will correct it.
+- Will improve it timely. If you found any mistake or have any suggestion let me know i will correct/apply that.
 - Meant for educational purpose only. I am not responsible if telegram block your account.
 
 # Updates:-
